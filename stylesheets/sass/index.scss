@@ -1,0 +1,183 @@
+@import '_globalPartials';
+
+body{
+  animation: fade 2.0s ease;
+  @keyframes fade{
+    from {opacity: 0;} to {opacity: 1;}
+  }
+}
+
+h2 > img{
+  width: auto;
+  height: 10.0rem;
+  margin-top: 2.5rem;
+}
+
+
+/*
+#computer {
+  position: relative;
+  right: -700px;
+}
+
+#welcome {
+  border-left: 1px solid #1c9b82;
+  background-color: $themeGreen;
+  position: relative;
+  z-index: 2;
+}
+*/
+
+#me > img{
+  width: 400px;
+  border-radius: 200px;
+  box-shadow: 1px 0px 10px $black;
+}
+
+#welcome {
+  padding-top: 5%;
+  right: -10%;
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 1.0s;
+  animation-fill-mode: forwards;
+
+  >h6{
+    padding-left: 50%;
+  }
+
+  img{
+    width:auto;
+    height: 8rem;
+  }
+
+  @keyframes fadeIn {
+    100% {right: 0px; opacity: 1;}
+  }
+}
+#section-1{
+  background-color: $themeGreen;
+  color: $white;
+  font-weight: light;
+
+  div[class*="col-"]{
+    vertical-align: middle;
+  }
+
+  .container{
+    width: 100%;
+    padding: 1rem 5%;
+    text-align: center;
+    overflow-x: hidden;
+  }
+
+  p{
+    text-align: right;
+  }
+
+  div[class*="col-"]:first-of-type{
+    text-align: center;
+    border-right: 2px solid;
+    padding-bottom: 15px;
+  }
+
+}
+
+#section-2, #pre-footer {
+  color: $black;
+  padding: 1rem 10%;
+}
+
+#pre-footer{
+  >.accounts-wrapper{
+    margin: 0 auto;
+    text-align: center;
+
+    .fa{
+      font-size: 5rem;
+      margin-left: 5%;
+      margin-right: 5%;
+      &:hover{
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+.tile:nth-child(even){
+  background-color: $themePurple;
+ .btn-round{
+  color: $white;
+  background-color: $themeOrange;
+  }
+
+  >.tile-upper{
+    background: $themePurpleST;
+  }
+}
+
+.tile:nth-child(odd){
+  background-color: $themeGreen;
+  >.tile-upper{
+    background-color: $themeGreenST;
+    .btn-round:hover{
+      filter: brightness(1.1);
+      -webkit-filter: brightness(1.1);
+    }
+  }
+
+  >.tile-lower{
+    .fa{
+      color: $black;
+    }
+  }
+}
+
+.tile
+{
+  color: $white;
+  min-height: 30vh;
+}
+
+.tile-upper{
+  padding: 5rem 10%;
+  position: relative;
+  z-index: 2;
+
+  >h6, >p{
+    text-align: center;
+  }
+
+  >p{
+    max-width: 900px;
+    margin: 1rem auto;
+  }
+
+  .btn-round{
+    display: table;
+    margin: 0 auto;
+  }
+}
+
+.tile-lower{
+  position: relative;
+  text-align: center;
+  height: 0px;
+
+  .fa{
+    max-width: 100%;
+    overflow: hidden;
+    font-size: 0;
+  }
+}
+
+@media screen and (max-width: 992px){
+  #me img{width: 50%; height: auto;}
+  #section-1 p{text-align: center;}
+  #section-1 div[class*="col-"]:first-of-type{
+    border-right: 0px;
+    border-bottom: 2px solid;
+  }
+}

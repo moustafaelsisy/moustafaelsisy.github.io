@@ -1,0 +1,50 @@
+.block-row {
+  text-align: center;
+
+  &:nth-of-type(even){
+    .block:nth-of-type(even){ background-color: $themeAqua; }
+    .block:nth-of-type(odd){ background-color: $themeOrange; }
+  }
+
+  &:nth-of-type(odd){
+    .block:nth-of-type(even){ background-color: $themeGreen; }
+    .block:nth-of-type(odd){ background-color: $themePurple; }
+  }
+}
+
+.block {
+  color: #fff;
+  padding: 0;
+  height: 15rem;
+  text-align: center;
+  cursor: default;
+  position: relative;
+
+  @media screen and (max-width:768px){height: 18rem;}
+
+  .block-content {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 80%;
+  }
+
+  h5{
+    font-weight: 600;
+    transition: font-size 0.5s;
+
+    @media screen and (max-width:768px){font-size: 2.0rem;}
+    @media screen and (max-width:400px){font-size: 1.5rem;}
+  }
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+
+    &:hover, &:focus, &:active {
+      color: inherit;
+      text-decoration: underline;
+    }
+  }
+}
