@@ -23,7 +23,7 @@
 				'opacity #{_duration(article)} ease-in-out',
 				'transform #{_duration(article)} ease-in-out'
 			));
-			@include padding(2.5rem, 2.5rem, (2rem, 0, 1rem, 0));
+			@include padding(2.5rem, 6rem, (2rem, 0rem, 1rem, 0rem));
 			position: relative;
 			width: 40rem;
 			max-width: 100%;
@@ -77,11 +77,15 @@
 					}
 				}
 			}
+
+			h1 {
+				text-align: center;
+			}
 		}
 
 		@include breakpoint('<=small') {
 			article {
-				@include padding(2rem, 2rem, (1.5rem, 0, 0.5rem, 0));
+				@include padding(2rem, 2rem, (1.5rem, 0rem, 0.5rem, 0rem));
 
 				.close {
 					&:before {
@@ -97,7 +101,7 @@
 
 		@include breakpoint('<=xsmall') {
 			article {
-				@include padding(2rem, 1.5rem, (1rem, 0, 0.5rem, 0));
+				@include padding(2rem, 1.5rem, (1rem, 0rem, 0.5rem, 0rem));
 			}
 		}
 	}

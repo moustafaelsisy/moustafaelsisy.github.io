@@ -5,6 +5,9 @@
 ///
 
 .gallery {
+		justify-content: center;
+		margin: 5rem;
+		
         @include vendor('transition', (
 			'-moz-filter #{_duration(panel)} ease',
 			'-webkit-filter #{_duration(panel)} ease',
