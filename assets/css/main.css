@@ -1269,10 +1269,11 @@ body.is-preload #bg:before {
   display: none;
 }
 #header .logo > img {
-  width: 15rem;
+  width: 20rem;
 }
 #header .content {
   max-width: 100%;
+  margin-top: 0;
 }
 #header .content .inner {
   -moz-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
