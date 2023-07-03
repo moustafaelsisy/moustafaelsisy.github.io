@@ -1220,27 +1220,13 @@ body.is-preload #bg:before {
   position: relative;
   min-height: 100vh;
   width: 100%;
-  padding: 4rem 2rem;
+  padding: 0;
+  padding-bottom: 2rem;
   z-index: 3;
 }
 #wrapper:before {
   content: "";
   display: block;
-}
-@media screen and (max-width: 1680px) {
-  #wrapper {
-    padding: 3rem 2rem;
-  }
-}
-@media screen and (max-width: 736px) {
-  #wrapper {
-    padding: 2rem 1rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  #wrapper {
-    padding: 1rem;
-  }
 }
 
 /* Header */
@@ -1473,6 +1459,7 @@ body.is-preload #header .content .inner {
   position: relative;
   width: 40rem;
   max-width: 100%;
+  width: 100%;
   background-color: rgba(27, 31, 34, 0.85);
   border-radius: 4px;
   opacity: 0;
