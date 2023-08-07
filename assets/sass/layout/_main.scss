@@ -32,6 +32,16 @@
 			border-radius: _size(border-radius);
 			opacity: 0;
 
+			&.no-scroll {
+				overflow: hidden;
+				height: 100vh;
+
+				.y-scroll-timeline {
+					height: 100vh;
+					margin-top: 5rem;
+				}
+			}
+
 			&.active {
 				@include vendor('transform', 'translateY(0)');
 				opacity: 1;

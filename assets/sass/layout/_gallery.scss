@@ -7,7 +7,7 @@
 .gallery {
 		justify-content: center;
 		margin: 5rem;
-		
+
         @include vendor('transition', (
 			'-moz-filter #{_duration(panel)} ease',
 			'-webkit-filter #{_duration(panel)} ease',
@@ -124,6 +124,10 @@
 
 		// Medium.
 			@include breakpoint('<=medium') {
+				& {
+					margin: 2rem 0;
+				}
+
 				@include thumb(
 					_misc(main-layout, medium, rows),
 					_misc(main-layout, medium, columns),

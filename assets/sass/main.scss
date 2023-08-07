@@ -41,9 +41,11 @@
 	@import 'components/table';
 	@import 'components/button';
 	@import 'components/poptrox-popup';
+	@import 'components/snap-scroll';
 
 // Layout.
 
+	@import 'layout/common';
 	@import 'layout/bg';
 	@import 'layout/wrapper';
 	@import 'layout/header';

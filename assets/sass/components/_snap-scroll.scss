@@ -1,0 +1,9 @@
+.y-scroll-timeline {
+    scroll-snap-type: y mandatory;
+    overflow: scroll;
+
+    .snap-point {
+        scroll-snap-align: start;
+        padding-bottom: 45vh;
+    }
+}
