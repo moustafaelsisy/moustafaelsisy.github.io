@@ -28,6 +28,7 @@
 	@import 'base/reset';
 	@import 'base/page';
 	@import 'base/typography';
+	@import 'base/animations';
 
 // Component.
 
@@ -42,10 +43,10 @@
 	@import 'components/button';
 	@import 'components/poptrox-popup';
 	@import 'components/snap-scroll';
+	@import 'components/resume';
 
 // Layout.
 
-	@import 'layout/common';
 	@import 'layout/bg';
 	@import 'layout/wrapper';
 	@import 'layout/header';

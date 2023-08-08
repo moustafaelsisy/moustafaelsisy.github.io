@@ -108,6 +108,9 @@ var showGallery = function(article) {
 			}, 100);
 		});
 
+	// Bind scroll observer to animate targets upon being scrolled into viewport
+	bindScrollAnimationObserver();
+
 	// Fix: Flexbox min-height bug on IE.
 		if (browser.name == 'ie') {
 
