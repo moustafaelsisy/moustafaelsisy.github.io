@@ -20,7 +20,9 @@
 
 		.thumb {
 			@include vendor('transition', (
-				'opacity 1.25s ease-in-out'
+				'opacity 1.25s ease-in-out',
+				'filter 0.5s ease',
+				'transform 0.5s ease'
 			));
 			@include vendor('pointer-events', 'none');
 			-webkit-tap-highlight-color: rgba(255,255,255,0);
@@ -39,6 +41,11 @@
 				position: absolute;
 				top: 0;
 				width: 100%;
+			}
+
+			&:hover {
+				filter: brightness(0.8);
+				transform: scale(0.9);
 			}
 
 			> .image {
@@ -88,7 +95,7 @@
 
 				@for $i from 1 through (($rows * $columns) * 1.5) {
 					&:nth-child(#{$i}) {
-						@include vendor('transition-delay', '#{$baseDelay + ($i * _duration(thumb))}');
+						@include vendor('transition-delay', '#{$baseDelay + ($i * _duration(thumb))}, 0s, 0s');
 					}
 				}
 			}

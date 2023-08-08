@@ -32,6 +32,10 @@
 			opacity: 1;
 		}
 
+		.pic {
+			filter: brightness(0.7);
+		}
+
 		.closer {
 			@include vendor('transition', 'opacity #{_duration(transition)} ease-in-out');
 			background-image: url('images/close.svg');

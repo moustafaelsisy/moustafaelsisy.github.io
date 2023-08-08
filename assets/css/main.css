@@ -1024,6 +1024,9 @@ button {
   z-index: 1;
   opacity: 1;
 }
+.poptrox-popup .pic {
+  filter: brightness(0.7);
+}
 .poptrox-popup .closer {
   -moz-transition: opacity 0.2s ease-in-out;
   -webkit-transition: opacity 0.2s ease-in-out;
@@ -1628,10 +1631,10 @@ body.is-preload #header .content .inner {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 .gallery .thumb {
-  -moz-transition: opacity 1.25s ease-in-out;
-  -webkit-transition: opacity 1.25s ease-in-out;
-  -ms-transition: opacity 1.25s ease-in-out;
-  transition: opacity 1.25s ease-in-out;
+  -moz-transition: opacity 1.25s ease-in-out, -moz-filter 0.5s ease, -moz-transform 0.5s ease;
+  -webkit-transition: opacity 1.25s ease-in-out, -webkit-filter 0.5s ease, -webkit-transform 0.5s ease;
+  -ms-transition: opacity 1.25s ease-in-out, -ms-filter 0.5s ease, -ms-transform 0.5s ease;
+  transition: opacity 1.25s ease-in-out, filter 0.5s ease, transform 0.5s ease;
   pointer-events: none;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   opacity: 0;
@@ -1652,6 +1655,10 @@ body.is-preload #header .content .inner {
   position: absolute;
   top: 0;
   width: 100%;
+}
+.gallery .thumb:hover {
+  filter: brightness(0.8);
+  transform: scale(0.9);
 }
 .gallery .thumb > .image {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
@@ -1691,58 +1698,58 @@ body.is-preload #header .content .inner {
   width: 33.3333333333%;
 }
 .gallery .thumb:nth-child(1) {
-  -moz-transition-delay: 0.375s;
-  -webkit-transition-delay: 0.375s;
-  -ms-transition-delay: 0.375s;
-  transition-delay: 0.375s;
+  -moz-transition-delay: 0.375s, 0s, 0s;
+  -webkit-transition-delay: 0.375s, 0s, 0s;
+  -ms-transition-delay: 0.375s, 0s, 0s;
+  transition-delay: 0.375s, 0s, 0s;
 }
 .gallery .thumb:nth-child(2) {
-  -moz-transition-delay: 0.525s;
-  -webkit-transition-delay: 0.525s;
-  -ms-transition-delay: 0.525s;
-  transition-delay: 0.525s;
+  -moz-transition-delay: 0.525s, 0s, 0s;
+  -webkit-transition-delay: 0.525s, 0s, 0s;
+  -ms-transition-delay: 0.525s, 0s, 0s;
+  transition-delay: 0.525s, 0s, 0s;
 }
 .gallery .thumb:nth-child(3) {
-  -moz-transition-delay: 0.675s;
-  -webkit-transition-delay: 0.675s;
-  -ms-transition-delay: 0.675s;
-  transition-delay: 0.675s;
+  -moz-transition-delay: 0.675s, 0s, 0s;
+  -webkit-transition-delay: 0.675s, 0s, 0s;
+  -ms-transition-delay: 0.675s, 0s, 0s;
+  transition-delay: 0.675s, 0s, 0s;
 }
 .gallery .thumb:nth-child(4) {
-  -moz-transition-delay: 0.825s;
-  -webkit-transition-delay: 0.825s;
-  -ms-transition-delay: 0.825s;
-  transition-delay: 0.825s;
+  -moz-transition-delay: 0.825s, 0s, 0s;
+  -webkit-transition-delay: 0.825s, 0s, 0s;
+  -ms-transition-delay: 0.825s, 0s, 0s;
+  transition-delay: 0.825s, 0s, 0s;
 }
 .gallery .thumb:nth-child(5) {
-  -moz-transition-delay: 0.975s;
-  -webkit-transition-delay: 0.975s;
-  -ms-transition-delay: 0.975s;
-  transition-delay: 0.975s;
+  -moz-transition-delay: 0.975s, 0s, 0s;
+  -webkit-transition-delay: 0.975s, 0s, 0s;
+  -ms-transition-delay: 0.975s, 0s, 0s;
+  transition-delay: 0.975s, 0s, 0s;
 }
 .gallery .thumb:nth-child(6) {
-  -moz-transition-delay: 1.125s;
-  -webkit-transition-delay: 1.125s;
-  -ms-transition-delay: 1.125s;
-  transition-delay: 1.125s;
+  -moz-transition-delay: 1.125s, 0s, 0s;
+  -webkit-transition-delay: 1.125s, 0s, 0s;
+  -ms-transition-delay: 1.125s, 0s, 0s;
+  transition-delay: 1.125s, 0s, 0s;
 }
 .gallery .thumb:nth-child(7) {
-  -moz-transition-delay: 1.275s;
-  -webkit-transition-delay: 1.275s;
-  -ms-transition-delay: 1.275s;
-  transition-delay: 1.275s;
+  -moz-transition-delay: 1.275s, 0s, 0s;
+  -webkit-transition-delay: 1.275s, 0s, 0s;
+  -ms-transition-delay: 1.275s, 0s, 0s;
+  transition-delay: 1.275s, 0s, 0s;
 }
 .gallery .thumb:nth-child(8) {
-  -moz-transition-delay: 1.425s;
-  -webkit-transition-delay: 1.425s;
-  -ms-transition-delay: 1.425s;
-  transition-delay: 1.425s;
+  -moz-transition-delay: 1.425s, 0s, 0s;
+  -webkit-transition-delay: 1.425s, 0s, 0s;
+  -ms-transition-delay: 1.425s, 0s, 0s;
+  transition-delay: 1.425s, 0s, 0s;
 }
 .gallery .thumb:nth-child(9) {
-  -moz-transition-delay: 1.575s;
-  -webkit-transition-delay: 1.575s;
-  -ms-transition-delay: 1.575s;
-  transition-delay: 1.575s;
+  -moz-transition-delay: 1.575s, 0s, 0s;
+  -webkit-transition-delay: 1.575s, 0s, 0s;
+  -ms-transition-delay: 1.575s, 0s, 0s;
+  transition-delay: 1.575s, 0s, 0s;
 }
 @media screen and (max-width: 1680px) {
   .gallery .thumb {
@@ -1755,58 +1762,58 @@ body.is-preload #header .content .inner {
     width: 33.3333333333%;
   }
   .gallery .thumb:nth-child(1) {
-    -moz-transition-delay: 0.375s;
-    -webkit-transition-delay: 0.375s;
-    -ms-transition-delay: 0.375s;
-    transition-delay: 0.375s;
+    -moz-transition-delay: 0.375s, 0s, 0s;
+    -webkit-transition-delay: 0.375s, 0s, 0s;
+    -ms-transition-delay: 0.375s, 0s, 0s;
+    transition-delay: 0.375s, 0s, 0s;
   }
   .gallery .thumb:nth-child(2) {
-    -moz-transition-delay: 0.525s;
-    -webkit-transition-delay: 0.525s;
-    -ms-transition-delay: 0.525s;
-    transition-delay: 0.525s;
+    -moz-transition-delay: 0.525s, 0s, 0s;
+    -webkit-transition-delay: 0.525s, 0s, 0s;
+    -ms-transition-delay: 0.525s, 0s, 0s;
+    transition-delay: 0.525s, 0s, 0s;
   }
   .gallery .thumb:nth-child(3) {
-    -moz-transition-delay: 0.675s;
-    -webkit-transition-delay: 0.675s;
-    -ms-transition-delay: 0.675s;
-    transition-delay: 0.675s;
+    -moz-transition-delay: 0.675s, 0s, 0s;
+    -webkit-transition-delay: 0.675s, 0s, 0s;
+    -ms-transition-delay: 0.675s, 0s, 0s;
+    transition-delay: 0.675s, 0s, 0s;
   }
   .gallery .thumb:nth-child(4) {
-    -moz-transition-delay: 0.825s;
-    -webkit-transition-delay: 0.825s;
-    -ms-transition-delay: 0.825s;
-    transition-delay: 0.825s;
+    -moz-transition-delay: 0.825s, 0s, 0s;
+    -webkit-transition-delay: 0.825s, 0s, 0s;
+    -ms-transition-delay: 0.825s, 0s, 0s;
+    transition-delay: 0.825s, 0s, 0s;
   }
   .gallery .thumb:nth-child(5) {
-    -moz-transition-delay: 0.975s;
-    -webkit-transition-delay: 0.975s;
-    -ms-transition-delay: 0.975s;
-    transition-delay: 0.975s;
+    -moz-transition-delay: 0.975s, 0s, 0s;
+    -webkit-transition-delay: 0.975s, 0s, 0s;
+    -ms-transition-delay: 0.975s, 0s, 0s;
+    transition-delay: 0.975s, 0s, 0s;
   }
   .gallery .thumb:nth-child(6) {
-    -moz-transition-delay: 1.125s;
-    -webkit-transition-delay: 1.125s;
-    -ms-transition-delay: 1.125s;
-    transition-delay: 1.125s;
+    -moz-transition-delay: 1.125s, 0s, 0s;
+    -webkit-transition-delay: 1.125s, 0s, 0s;
+    -ms-transition-delay: 1.125s, 0s, 0s;
+    transition-delay: 1.125s, 0s, 0s;
   }
   .gallery .thumb:nth-child(7) {
-    -moz-transition-delay: 1.275s;
-    -webkit-transition-delay: 1.275s;
-    -ms-transition-delay: 1.275s;
-    transition-delay: 1.275s;
+    -moz-transition-delay: 1.275s, 0s, 0s;
+    -webkit-transition-delay: 1.275s, 0s, 0s;
+    -ms-transition-delay: 1.275s, 0s, 0s;
+    transition-delay: 1.275s, 0s, 0s;
   }
   .gallery .thumb:nth-child(8) {
-    -moz-transition-delay: 1.425s;
-    -webkit-transition-delay: 1.425s;
-    -ms-transition-delay: 1.425s;
-    transition-delay: 1.425s;
+    -moz-transition-delay: 1.425s, 0s, 0s;
+    -webkit-transition-delay: 1.425s, 0s, 0s;
+    -ms-transition-delay: 1.425s, 0s, 0s;
+    transition-delay: 1.425s, 0s, 0s;
   }
   .gallery .thumb:nth-child(9) {
-    -moz-transition-delay: 1.575s;
-    -webkit-transition-delay: 1.575s;
-    -ms-transition-delay: 1.575s;
-    transition-delay: 1.575s;
+    -moz-transition-delay: 1.575s, 0s, 0s;
+    -webkit-transition-delay: 1.575s, 0s, 0s;
+    -ms-transition-delay: 1.575s, 0s, 0s;
+    transition-delay: 1.575s, 0s, 0s;
   }
 }
 @media screen and (max-width: 1280px) {
@@ -1820,40 +1827,40 @@ body.is-preload #header .content .inner {
     width: 50%;
   }
   .gallery .thumb:nth-child(1) {
-    -moz-transition-delay: 0.375s;
-    -webkit-transition-delay: 0.375s;
-    -ms-transition-delay: 0.375s;
-    transition-delay: 0.375s;
+    -moz-transition-delay: 0.375s, 0s, 0s;
+    -webkit-transition-delay: 0.375s, 0s, 0s;
+    -ms-transition-delay: 0.375s, 0s, 0s;
+    transition-delay: 0.375s, 0s, 0s;
   }
   .gallery .thumb:nth-child(2) {
-    -moz-transition-delay: 0.525s;
-    -webkit-transition-delay: 0.525s;
-    -ms-transition-delay: 0.525s;
-    transition-delay: 0.525s;
+    -moz-transition-delay: 0.525s, 0s, 0s;
+    -webkit-transition-delay: 0.525s, 0s, 0s;
+    -ms-transition-delay: 0.525s, 0s, 0s;
+    transition-delay: 0.525s, 0s, 0s;
   }
   .gallery .thumb:nth-child(3) {
-    -moz-transition-delay: 0.675s;
-    -webkit-transition-delay: 0.675s;
-    -ms-transition-delay: 0.675s;
-    transition-delay: 0.675s;
+    -moz-transition-delay: 0.675s, 0s, 0s;
+    -webkit-transition-delay: 0.675s, 0s, 0s;
+    -ms-transition-delay: 0.675s, 0s, 0s;
+    transition-delay: 0.675s, 0s, 0s;
   }
   .gallery .thumb:nth-child(4) {
-    -moz-transition-delay: 0.825s;
-    -webkit-transition-delay: 0.825s;
-    -ms-transition-delay: 0.825s;
-    transition-delay: 0.825s;
+    -moz-transition-delay: 0.825s, 0s, 0s;
+    -webkit-transition-delay: 0.825s, 0s, 0s;
+    -ms-transition-delay: 0.825s, 0s, 0s;
+    transition-delay: 0.825s, 0s, 0s;
   }
   .gallery .thumb:nth-child(5) {
-    -moz-transition-delay: 0.975s;
-    -webkit-transition-delay: 0.975s;
-    -ms-transition-delay: 0.975s;
-    transition-delay: 0.975s;
+    -moz-transition-delay: 0.975s, 0s, 0s;
+    -webkit-transition-delay: 0.975s, 0s, 0s;
+    -ms-transition-delay: 0.975s, 0s, 0s;
+    transition-delay: 0.975s, 0s, 0s;
   }
   .gallery .thumb:nth-child(6) {
-    -moz-transition-delay: 1.125s;
-    -webkit-transition-delay: 1.125s;
-    -ms-transition-delay: 1.125s;
-    transition-delay: 1.125s;
+    -moz-transition-delay: 1.125s, 0s, 0s;
+    -webkit-transition-delay: 1.125s, 0s, 0s;
+    -ms-transition-delay: 1.125s, 0s, 0s;
+    transition-delay: 1.125s, 0s, 0s;
   }
 }
 @media screen and (max-width: 980px) {
@@ -1870,58 +1877,58 @@ body.is-preload #header .content .inner {
     width: 50%;
   }
   .gallery .thumb:nth-child(1) {
-    -moz-transition-delay: 0.375s;
-    -webkit-transition-delay: 0.375s;
-    -ms-transition-delay: 0.375s;
-    transition-delay: 0.375s;
+    -moz-transition-delay: 0.375s, 0s, 0s;
+    -webkit-transition-delay: 0.375s, 0s, 0s;
+    -ms-transition-delay: 0.375s, 0s, 0s;
+    transition-delay: 0.375s, 0s, 0s;
   }
   .gallery .thumb:nth-child(2) {
-    -moz-transition-delay: 0.525s;
-    -webkit-transition-delay: 0.525s;
-    -ms-transition-delay: 0.525s;
-    transition-delay: 0.525s;
+    -moz-transition-delay: 0.525s, 0s, 0s;
+    -webkit-transition-delay: 0.525s, 0s, 0s;
+    -ms-transition-delay: 0.525s, 0s, 0s;
+    transition-delay: 0.525s, 0s, 0s;
   }
   .gallery .thumb:nth-child(3) {
-    -moz-transition-delay: 0.675s;
-    -webkit-transition-delay: 0.675s;
-    -ms-transition-delay: 0.675s;
-    transition-delay: 0.675s;
+    -moz-transition-delay: 0.675s, 0s, 0s;
+    -webkit-transition-delay: 0.675s, 0s, 0s;
+    -ms-transition-delay: 0.675s, 0s, 0s;
+    transition-delay: 0.675s, 0s, 0s;
   }
   .gallery .thumb:nth-child(4) {
-    -moz-transition-delay: 0.825s;
-    -webkit-transition-delay: 0.825s;
-    -ms-transition-delay: 0.825s;
-    transition-delay: 0.825s;
+    -moz-transition-delay: 0.825s, 0s, 0s;
+    -webkit-transition-delay: 0.825s, 0s, 0s;
+    -ms-transition-delay: 0.825s, 0s, 0s;
+    transition-delay: 0.825s, 0s, 0s;
   }
   .gallery .thumb:nth-child(5) {
-    -moz-transition-delay: 0.975s;
-    -webkit-transition-delay: 0.975s;
-    -ms-transition-delay: 0.975s;
-    transition-delay: 0.975s;
+    -moz-transition-delay: 0.975s, 0s, 0s;
+    -webkit-transition-delay: 0.975s, 0s, 0s;
+    -ms-transition-delay: 0.975s, 0s, 0s;
+    transition-delay: 0.975s, 0s, 0s;
   }
   .gallery .thumb:nth-child(6) {
-    -moz-transition-delay: 1.125s;
-    -webkit-transition-delay: 1.125s;
-    -ms-transition-delay: 1.125s;
-    transition-delay: 1.125s;
+    -moz-transition-delay: 1.125s, 0s, 0s;
+    -webkit-transition-delay: 1.125s, 0s, 0s;
+    -ms-transition-delay: 1.125s, 0s, 0s;
+    transition-delay: 1.125s, 0s, 0s;
   }
   .gallery .thumb:nth-child(7) {
-    -moz-transition-delay: 1.275s;
-    -webkit-transition-delay: 1.275s;
-    -ms-transition-delay: 1.275s;
-    transition-delay: 1.275s;
+    -moz-transition-delay: 1.275s, 0s, 0s;
+    -webkit-transition-delay: 1.275s, 0s, 0s;
+    -ms-transition-delay: 1.275s, 0s, 0s;
+    transition-delay: 1.275s, 0s, 0s;
   }
   .gallery .thumb:nth-child(8) {
-    -moz-transition-delay: 1.425s;
-    -webkit-transition-delay: 1.425s;
-    -ms-transition-delay: 1.425s;
-    transition-delay: 1.425s;
+    -moz-transition-delay: 1.425s, 0s, 0s;
+    -webkit-transition-delay: 1.425s, 0s, 0s;
+    -ms-transition-delay: 1.425s, 0s, 0s;
+    transition-delay: 1.425s, 0s, 0s;
   }
   .gallery .thumb:nth-child(9) {
-    -moz-transition-delay: 1.575s;
-    -webkit-transition-delay: 1.575s;
-    -ms-transition-delay: 1.575s;
-    transition-delay: 1.575s;
+    -moz-transition-delay: 1.575s, 0s, 0s;
+    -webkit-transition-delay: 1.575s, 0s, 0s;
+    -ms-transition-delay: 1.575s, 0s, 0s;
+    transition-delay: 1.575s, 0s, 0s;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1935,22 +1942,22 @@ body.is-preload #header .content .inner {
     width: 100%;
   }
   .gallery .thumb:nth-child(1) {
-    -moz-transition-delay: 0.375s;
-    -webkit-transition-delay: 0.375s;
-    -ms-transition-delay: 0.375s;
-    transition-delay: 0.375s;
+    -moz-transition-delay: 0.375s, 0s, 0s;
+    -webkit-transition-delay: 0.375s, 0s, 0s;
+    -ms-transition-delay: 0.375s, 0s, 0s;
+    transition-delay: 0.375s, 0s, 0s;
   }
   .gallery .thumb:nth-child(2) {
-    -moz-transition-delay: 0.525s;
-    -webkit-transition-delay: 0.525s;
-    -ms-transition-delay: 0.525s;
-    transition-delay: 0.525s;
+    -moz-transition-delay: 0.525s, 0s, 0s;
+    -webkit-transition-delay: 0.525s, 0s, 0s;
+    -ms-transition-delay: 0.525s, 0s, 0s;
+    transition-delay: 0.525s, 0s, 0s;
   }
   .gallery .thumb:nth-child(3) {
-    -moz-transition-delay: 0.675s;
-    -webkit-transition-delay: 0.675s;
-    -ms-transition-delay: 0.675s;
-    transition-delay: 0.675s;
+    -moz-transition-delay: 0.675s, 0s, 0s;
+    -webkit-transition-delay: 0.675s, 0s, 0s;
+    -ms-transition-delay: 0.675s, 0s, 0s;
+    transition-delay: 0.675s, 0s, 0s;
   }
 }
 
