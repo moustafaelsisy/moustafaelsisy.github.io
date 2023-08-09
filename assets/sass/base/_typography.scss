@@ -65,6 +65,7 @@
 		margin: 0 0 (_size(element-margin) * 0.5) 0;
 		text-transform: uppercase;
 		letter-spacing: _font(letter-spacing);
+		max-width: 90vw; //safeguard
 
 		a {
 			color: inherit;

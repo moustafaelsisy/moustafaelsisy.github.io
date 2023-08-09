@@ -163,6 +163,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 1rem 0;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
+  max-width: 90vw;
 }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   color: inherit;
@@ -1304,6 +1305,7 @@ body.touch .poptrox-popup .nav-next {
 @media screen and (max-width: 980px) {
   #cnp .c-entry:nth-child(n), #cnp .p-entry:nth-child(n) {
     flex-direction: column;
+    align-items: center;
     row-gap: 2rem;
   }
   #cnp .c-entry:nth-child(n) .logo-container img, #cnp .p-entry:nth-child(n) .logo-container img {
