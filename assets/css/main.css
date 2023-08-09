@@ -1323,6 +1323,7 @@ body.touch .poptrox-popup .nav-next {
 #awards {
   padding: 1rem 2rem;
   padding-top: 2.5rem;
+  padding-bottom: 5rem;
   display: flex;
   flex-direction: column;
   row-gap: 3rem;
@@ -1340,7 +1341,6 @@ body.touch .poptrox-popup .nav-next {
 }
 #awards .awards-entry ul {
   display: flex;
-  justify-content: center;
   row-gap: 1rem;
   column-gap: 1rem;
   flex-direction: row;
