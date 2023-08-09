@@ -68,24 +68,28 @@
             <div>
                 <h2 class="major">Experience</h2>
                 <div id="resume">
-                    <div class="scroll-entry-animate">
+                    {{#each tech.experience.entries }}
+                    <div class="scroll-entry-animate resume-entry">
                         <div class="logo-container">
-                            <img src="images/logos/mysa.png">
+                            <img src="images/logos/{{this.logo}}" class="{{this.logoClass}}">
                         </div>
-                         <p>At this talk I presented some of the theory behind Microserviced architectures, and common
-                        misconceptions
-                        in practice within the industry on how and when they should be implemented.
-                        </p>
-                    </div>
-                    <div class="scroll-entry-animate">
-                         <p>At this talk I presented some of the theory behind Microserviced architectures, and common
-                        misconceptions
-                        in practice within the industry on how and when they should be implemented.
-                        </p>
-                        <div class="logo-container">
-                            <img src="images/logos/google.png">
+                        <div class="resume-info">
+                            <h3 class="resume-org">{{this.orgName}}</h3>
+                            <h4>{{this.title}} - {{this.location}}</h4>
+                            <h4>{{this.timeSpan}}</h4>
+                            <div class="resume-skills">
+                                {{#each this.skills}}
+                                    <div class="button">{{this}}</div>
+                                {{/each}}
+                            </div>
+                            <ul>
+                                {{#each this.details}}
+                                <li>{{this}}</li>
+                                {{/each}}
+                            </ul>
                         </div>
                     </div>
+                    {{/each}}
                 </div>
             </div>
 
