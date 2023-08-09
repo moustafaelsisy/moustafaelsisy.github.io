@@ -1192,51 +1192,51 @@ body.touch .poptrox-popup .nav-next {
   padding-top: 10vh;
 }
 
-#resume {
+#resume, #education {
   display: flex;
   flex-direction: column; /* Arrange items vertically */
   align-items: center; /* Center items horizontally */
   padding: 1rem 2rem;
 }
-#resume > .resume-entry {
+#resume > .resume-entry, #education > .resume-entry {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding-bottom: 3rem;
 }
-#resume > .resume-entry.animate > *:nth-child(n) {
+#resume > .resume-entry.animate > *:nth-child(n), #education > .resume-entry.animate > *:nth-child(n) {
   opacity: 1;
   transform: translateX(0);
 }
-#resume > .resume-entry.animate .logo-google {
+#resume > .resume-entry.animate .logo-google, #education > .resume-entry.animate .logo-google {
   transform: rotate(720deg);
 }
-#resume > .resume-entry > * {
+#resume > .resume-entry > *, #education > .resume-entry > * {
   opacity: 0;
   transition: opacity 1s, transform 1s;
   transition-timing-function: ease-out;
 }
-#resume > .resume-entry > .logo-container {
+#resume > .resume-entry > .logo-container, #education > .resume-entry > .logo-container {
   transform: translateX(-100%);
   flex: 1;
   text-align: center;
 }
-#resume > .resume-entry > .logo-container img {
+#resume > .resume-entry > .logo-container img, #education > .resume-entry > .logo-container img {
   max-height: 10rem;
   max-width: 40vw;
 }
-#resume > .resume-entry > .logo-container img.logo-google {
+#resume > .resume-entry > .logo-container img.logo-google, #education > .resume-entry > .logo-container img.logo-google {
   transition: transform 1s;
 }
-#resume > .resume-entry > .resume-info {
+#resume > .resume-entry > .resume-info, #education > .resume-entry > .resume-info {
   transform: translateX(100%);
   flex: 2;
   padding-left: 3rem;
 }
-#resume > .resume-entry > .resume-info .resume-org {
+#resume > .resume-entry > .resume-info .resume-org, #education > .resume-entry > .resume-info .resume-org {
   font-size: larger;
 }
-#resume > .resume-entry > .resume-info .resume-skills {
+#resume > .resume-entry > .resume-info .resume-skills, #education > .resume-entry > .resume-info .resume-skills {
   display: flex;
   flex-flow: row wrap;
   row-gap: 1rem;
@@ -1244,32 +1244,32 @@ body.touch .poptrox-popup .nav-next {
   margin: 0.5rem 0;
   margin-bottom: 1rem;
 }
-#resume > .resume-entry > .resume-info .resume-skills .button {
+#resume > .resume-entry > .resume-info .resume-skills .button, #education > .resume-entry > .resume-info .resume-skills .button {
   padding: 0 1rem;
   font-size: 0.7rem;
 }
-#resume > .resume-entry:nth-child(even) {
+#resume > .resume-entry:nth-child(even), #education > .resume-entry:nth-child(even) {
   flex-direction: row-reverse;
 }
-#resume > .resume-entry:nth-child(even):not(.animate) > .logo-container {
+#resume > .resume-entry:nth-child(even):not(.animate) > .logo-container, #education > .resume-entry:nth-child(even):not(.animate) > .logo-container {
   transform: translateX(100%);
 }
-#resume > .resume-entry:nth-child(even):not(.animate) > .resume-info {
+#resume > .resume-entry:nth-child(even):not(.animate) > .resume-info, #education > .resume-entry:nth-child(even):not(.animate) > .resume-info {
   transform: translateX(-100%);
 }
-#resume > .resume-entry:nth-child(even) > .resume-info {
+#resume > .resume-entry:nth-child(even) > .resume-info, #education > .resume-entry:nth-child(even) > .resume-info {
   padding-left: 0rem;
   padding-right: 3rem;
 }
 @media screen and (max-width: 980px) {
-  #resume > .resume-entry:nth-child(n) {
+  #resume > .resume-entry:nth-child(n), #education > .resume-entry:nth-child(n) {
     flex-direction: column;
     row-gap: 2rem;
   }
-  #resume > .resume-entry:nth-child(n) .logo-container img {
+  #resume > .resume-entry:nth-child(n) .logo-container img, #education > .resume-entry:nth-child(n) .logo-container img {
     max-width: 70vw;
   }
-  #resume > .resume-entry:nth-child(n) > .resume-info {
+  #resume > .resume-entry:nth-child(n) > .resume-info, #education > .resume-entry:nth-child(n) > .resume-info {
     padding-left: 0rem;
     padding-right: 0rem;
   }
@@ -1360,6 +1360,25 @@ body.touch .poptrox-popup .nav-next {
 
 .logo-container a {
   border-bottom: 0px;
+}
+
+.resume-social {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  column-gap: 2rem;
+}
+.resume-social a {
+  text-decoration: none;
+  border-bottom: 0;
+}
+
+.resume-contact {
+  margin: 0 auto;
+  display: block;
+  width: 10rem;
+  margin-bottom: 2rem;
 }
 
 /* BG */

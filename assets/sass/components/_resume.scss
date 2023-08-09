@@ -1,4 +1,4 @@
-#resume {
+#resume, #education {
     display: flex;
     flex-direction: column; /* Arrange items vertically */
     align-items: center; /* Center items horizontally */
@@ -227,4 +227,24 @@
     a {
         border-bottom: 0px;
     }
+}
+
+.resume-social {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    column-gap: 2rem;
+
+    a {
+        text-decoration: none;
+        border-bottom: 0;
+    }
+}
+
+.resume-contact {
+    margin: 0 auto;
+    display: block;
+    width: 10rem;
+    margin-bottom: 2rem; 
 }
