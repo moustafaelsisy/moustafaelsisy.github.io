@@ -6,7 +6,7 @@
 
     & > .resume-entry {
         display: flex;
-        flex-direction: row; /* Arrange items vertically */
+        flex-direction: row;
         align-items: center;
         padding-bottom: 3rem;
 
@@ -107,6 +107,11 @@
 }
 
 #cnp {
+    padding: 1rem 2rem;
+    padding-top: 2.5rem;
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+
     .c-entry {
         &.animate {
             .logo-container {
@@ -121,8 +126,61 @@
         .logo-container {
             img {
                 opacity: 0;
-                max-height: 20rem;  
             }
         }
+    }
+
+    .p-entry {
+        &.animate {
+            .logo-container {
+                img {
+                    transform: rotateY(0deg);
+                }
+            }
+        }
+
+        .logo-container {
+            img {
+                transform: rotateY(90deg);
+                transition: transform 1s;
+            }
+        }
+    }
+
+    .logo-container {
+        img {
+            max-height: 15rem;
+        }
+    }
+
+    .c-entry, .p-entry {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding-bottom: 3rem;
+        column-gap: 3rem;
+
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        @include breakpoint('<=medium') {
+            &:nth-child(n) {
+                flex-direction: column;
+                row-gap: 2rem;
+    
+                .logo-container {
+                    img {
+                        max-width: 70vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.logo-container {
+    a {
+        border-bottom: 0px;
     }
 }
