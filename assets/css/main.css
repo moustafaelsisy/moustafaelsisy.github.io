@@ -1173,40 +1173,81 @@ body.touch .poptrox-popup .nav-next {
   align-items: center; /* Center items horizontally */
   padding: 1rem 2rem;
 }
-#resume > div {
+#resume > .resume-entry {
   display: flex;
   flex-direction: row; /* Arrange items vertically */
   align-items: center;
   padding-bottom: 3rem;
 }
-#resume > div.animate > *:nth-child(n) {
+#resume > .resume-entry.animate > *:nth-child(n) {
   opacity: 1;
   transform: translateX(0);
 }
-#resume > div > * {
+#resume > .resume-entry.animate .logo-google {
+  transform: rotate(720deg);
+}
+#resume > .resume-entry > * {
   opacity: 0;
   transition: opacity 1s, transform 1s;
   transition-timing-function: ease-out;
 }
-#resume > div > .logo-container {
+#resume > .resume-entry > .logo-container {
   transform: translateX(-100%);
   flex: 1;
   text-align: center;
 }
-#resume > div > .logo-container img {
-  height: 10rem;
+#resume > .resume-entry > .logo-container img {
+  max-height: 10rem;
+  max-width: 40vw;
 }
-#resume > div > p {
+#resume > .resume-entry > .logo-container img.logo-google {
+  transition: transform 1s;
+}
+#resume > .resume-entry > .resume-info {
   transform: translateX(100%);
   flex: 2;
   padding-left: 3rem;
 }
-#resume > div:nth-child(even):not(.animate) > .logo-container {
+#resume > .resume-entry > .resume-info .resume-org {
+  font-size: larger;
+}
+#resume > .resume-entry > .resume-info .resume-skills {
+  display: flex;
+  flex-flow: row wrap;
+  row-gap: 1rem;
+  column-gap: 1rem;
+  margin: 0.5rem 0;
+  margin-bottom: 1rem;
+}
+#resume > .resume-entry > .resume-info .resume-skills .button {
+  padding: 0 1rem;
+  font-size: 0.7rem;
+}
+#resume > .resume-entry:nth-child(even) {
+  flex-direction: row-reverse;
+}
+#resume > .resume-entry:nth-child(even):not(.animate) > .logo-container {
   transform: translateX(100%);
 }
-#resume > div:nth-child(even):not(.animate) > p {
+#resume > .resume-entry:nth-child(even):not(.animate) > .resume-info {
   transform: translateX(-100%);
-  padding-left: 0 rem;
+}
+#resume > .resume-entry:nth-child(even) > .resume-info {
+  padding-left: 0rem;
+  padding-right: 3rem;
+}
+@media screen and (max-width: 980px) {
+  #resume > .resume-entry:nth-child(n) {
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+  #resume > .resume-entry:nth-child(n) .logo-container img {
+    max-width: 70vw;
+  }
+  #resume > .resume-entry:nth-child(n) > .resume-info {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
 }
 
 /* BG */
@@ -1540,6 +1581,7 @@ body.is-preload #header .content .inner {
   background-color: rgba(27, 31, 34, 0.85);
   border-radius: 4px;
   opacity: 0;
+  overflow-x: hidden;
 }
 #main article.no-scroll {
   overflow: hidden;
