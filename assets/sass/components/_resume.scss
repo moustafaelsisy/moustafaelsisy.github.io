@@ -33,7 +33,8 @@
             text-align: center;
             
             img {
-                height: 10rem;
+                max-height: 10rem;
+                max-width: 40vw;
 
                 &.logo-google {
                     transition: transform 1s;
@@ -89,6 +90,12 @@
 			&:nth-child(n) {
 				flex-direction: column;
                 row-gap: 2rem;
+
+                .logo-container {
+                    img {
+                        max-width: 70vw;
+                    }
+                }
 
                 > .resume-info {
                     padding-left: 0rem;
