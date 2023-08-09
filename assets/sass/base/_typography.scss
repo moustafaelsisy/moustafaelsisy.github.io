@@ -81,6 +81,14 @@
 			padding-bottom: 0.5rem;
 			margin: 0 0 (_size(element-margin) * 1) 0;
 		}
+
+		&.golden {
+			filter: brightness(1.15);
+			background: linear-gradient(135deg, #d4b800, #dd44bb88);
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
 	}
 
 	h1 {
